@@ -1,0 +1,15 @@
+.my-profile-img{
+    border-radius: 100%;
+}
+
+.my-profile-pic-edit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 480px){
+    .btn{
+        font-size: 0.6rem;
+    }
+}

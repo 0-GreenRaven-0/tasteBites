@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --recipeList-bg: orange;
+    --border-bottom-color: black;
+    --view-recipe: orange;
+    --log-signUp: orange;
+    --log-signUp-hover: red;
+    --recipe-create-bg: white;
+    --recipe-create-txt: orange;
+}
+  
+.dark-mode{
+    --recipeList-bg: black;
+    --border-bottom-color: white;
+    --view-recipe: #4f9aff;
+    --log-signUp: #4f9aff;
+    --log-signUp-hover: lime;
+    --recipe-create-bg: #4f9aff;
+    --recipe-create-txt: white;
+}
+  
+
+.unregistered-page{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    position: relative; 
+}
+
+.unregistered-page-content{
+ margin-top: 250px;
+ text-align: center;
+}
+
+.unregistered-page::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./ChatGPT\ Image\ Apr\ 15\,\ 2025\,\ 10_11_44\ PM.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.unregistered-page a{
+    text-decoration: none;
+    color: var(--log-signUp);
+    font-weight: 500;
+
+}
+
+.unregistered-page a:hover{
+    color: var(--log-signUp-hover);
+}
+
+
+/* --------------------------------------- */
+
+.user-recipe-list-content{
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 60vh;
+}
+
+
+.user-recipe-list-page-header{
+    background-color: var(--recipeList-bg);
+    border-bottom: 5px solid var(--border-bottom-color);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-creation-btn{
+    border: none;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: var(--recipe-create-bg);
+    color: var(--recipe-create-txt);
+    cursor: pointer;
+}
+
+.myRecipe-page-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.myRecipe-page-empty{
+    position: relative;
+    text-align: center;
+}
+
+
+@media (max-width: 480px){
+    .recipe-creation-btn{
+      font-size: 0.7rem;
+    }
+
+    .user-recipe-list-content{
+     margin:0 0 40vh 15px;
+     text-align: center;
+     
+    }
+}

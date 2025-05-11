@@ -1,0 +1,109 @@
+:root{
+  --bg-color-1st: rgb(75, 45, 0);
+  --bg-color-2nd: orange;
+  --bg-color-3rd: yellow;
+  --text-color-footer: black;
+}
+
+.dark-mode{
+  --bg-color-1st: black;
+  --bg-color-2nd: darkcyan;
+  --bg-color-3rd: blue;
+  --text-color-footer: white;
+}
+
+.footer {
+    padding: 10px;
+    background: linear-gradient(to bottom right, var(--bg-color-1st) 25%, var(--bg-color-2nd), var(--bg-color-3rd));
+    color: var(--text-color-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer li{
+    font-size: clamp(0.6rem, 1vw, 2rem);
+}
+
+
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.footer-line-breaker{
+  height: 2px;
+  width: 90%;
+  background-color: var(--text-color-footer);
+  margin: 10px 0 10px 0
+}
+
+
+.social-icon-container{
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.social-icon{
+   font-size: clamp(1.5rem, 1vw, 2rem);
+  cursor: pointer;
+}
+
+.facebook{
+  color: blue;
+}
+
+.instagram{
+  color: magenta;
+}
+
+.twitter{
+  color: cyan;
+}
+
+.whatsapp{
+  color: lime;
+}
+
+.footer-middle, li{
+  font-size: 1rem !important;
+}
+
+.footer-right, li{
+  font-size: 1rem !important;
+}
+  
+@media (max-width: 480px){
+.footer-logo{
+  width: 100px;
+  height: 100px;
+}
+
+.footer-middle, li{
+  font-size: 0.6rem !important;
+}
+
+.footer-right, li{
+  font-size: 0.6rem !important;
+}
+
+.footer-top{
+  margin-top: -15px;
+}
+
+.footer-line-breaker{
+  margin: -10px 0 10px 0
+}
+
+.rights{
+  font-size: 0.8rem;
+}
+
+}

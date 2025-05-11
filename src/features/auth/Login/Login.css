@@ -1,0 +1,166 @@
+.login-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./pexels-dana-tentis-118658-691114.jpg');
+    background-size: cover;
+}
+
+.logo-in-mobile{
+    display: none;
+}
+
+.left-side h1{
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.left-side{
+    background-color: rgb(75, 42, 0);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    height: 95%;
+    min-width: 250px;
+    border: 3px solid gold;
+    outline: 5px dotted darkgoldenrod;
+    padding: 5px;
+    background-image: url('./ChatGPT\ Image\ Apr\ 12\,\ 2025\,\ 01_30_17\ PM.png');
+    background-position: top;
+    background-size: contain;
+}
+
+.login-input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: gold;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.login-input:focus{
+    outline: none;
+}
+
+.login-input::placeholder{
+    color: black;
+}
+
+.login-button{
+    padding: 3px;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-button{
+    background: none;
+    border: none;
+    color: yellow;
+    align-self: flex-end;
+    font-size: 1rem;
+}
+
+.login-button:hover{
+    color: white
+}
+
+.login-container [type="checkbox"] {
+    accent-color: yellow; /* or any color */
+    margin-left: 5px;
+}
+
+.pass-area{
+ display: flex;
+ flex-direction: column;
+}
+
+.forgot-pass{
+    background: none;
+    border: none;
+    color: yellow;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.forgot-pass:hover{
+    color: white
+}
+
+.login-error{
+    color: red;
+    background-color: black;
+}
+
+.right-side{
+    padding: 10px
+}
+
+.right-side img{
+    background-color: rgb(75, 42, 0);
+    border-radius: 100%;
+}
+
+
+@media (min-width: 480px) and (max-width: 650px){
+    .left-side{
+    width: 100%;
+}
+
+.right-side{
+    display: none;
+}
+
+}
+
+@media (max-width: 480px){
+
+    .login-container{
+        background-image: none;
+    }
+
+    .login-label{
+        color: rgb(75, 42, 0) !important;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side{
+        width: 100vw;
+    }
+
+    .logo-in-mobile{
+       display: block;
+       position: absolute;
+       top: 3.5%;
+       left: 50%;
+       transform: translate(-50%, 0);
+       border-radius: 100%;
+       background: url('./logo\ border.png');
+       background-position: center;
+       background-size: contain;
+       padding: 30px;
+    }
+
+    
+}

@@ -1,0 +1,102 @@
+:root{
+  --button-color-header: orange;
+  --button-color-header-hover: yellow
+}
+
+.dark-mode{
+  --bg-color: rgb(65, 65, 65);
+  --button-color-header: #4f9aff;
+  --button-color-header-hover: white
+}
+
+
+*{
+  font-family: 'Fredoka', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.header-container{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-button{
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--button-color-header);
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.header-button:hover{
+  color: var(--button-color-header-hover);
+  cursor: pointer
+}
+
+.header-top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgba(78, 77, 77, 0.61) 
+
+}
+
+.header-top .left{
+  display: flex;
+  align-items: center;
+  color: var(--button-color-header);
+  font-size: 1.2rem;
+}
+
+.header-top .left img{
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.bottom{
+  font-size: 2rem;
+}
+
+.bottom img{
+  user-select: none;
+}
+
+.dropMenu-icon{
+  color: var(--button-color-header);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.dropMenu-icon:hover{
+  color: var(--button-color-header-hover);
+}
+
+.right{
+  display: flex;
+  gap: 20px
+}
+
+
+
+
+/* Mobile Design */
+
+@media (max-width: 480px){
+  .theme-icon{
+    font-size: 0.625rem;
+  }
+
+  .logo-img{
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,94 @@
+:root{
+    --collection-header-bg: orange;
+    --collection-header-bg-border: black;
+    --crop-btn-txt: yellow;
+    --not-favorite: black;
+}
+
+.dark-mode{
+    --collection-header-bg: black;
+    --collection-header-bg-border: white;
+    --crop-btn-txt: white;
+    --not-favorite: white;
+}
+
+
+/* For the ManagaCollections component */
+.collection-button{
+   font-size: 1.7rem;
+   color: red;
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.favorite{
+    color: red
+}
+
+.not-favorite{
+    color: var(--not-favorite)
+}
+
+/* ---------------------------------- */
+
+.collection-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.collection-page-top{
+    background-color: var(--collection-header-bg);
+    padding: 5px;
+    border-bottom: 5px solid var(--collection-header-bg-border)
+}
+
+.collection-page-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.collection-page-bottom{
+    height: 100%;
+    padding: 10px;
+}
+
+.collection-page-empty{
+    position: relative;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collection-page-empty::before{
+    position: absolute;
+    background-image: url('./ChatGPT\ Image\ Apr\ 15\,\ 2025\,\ 10_05_55\ PM.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: " ";
+    inset: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+@media (max-width: 480px){
+    .collection-button{
+        font-size: 1.4rem;
+        top: 0.2rem;
+        right: 0.2rem;
+    } 
+
+    .collection-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+}

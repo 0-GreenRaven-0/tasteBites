@@ -1,0 +1,55 @@
+:root{
+    --bg-color: papayawhip;
+    --text-color: black
+}
+
+.dark-mode{
+    --bg-color: rgb(65, 65, 65);
+    --text-color: white
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.no-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.no-content::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./ChatGPT\ Image\ Apr\ 15\,\ 2025\,\ 10_05_55\ PM.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    height: 50vh;
+}
+
+.search-tools{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Search filters: */
+
+.filter{
+  width: 150px;
+}
+
+@media (max-width: 480px){
+ .back-btn{
+    font-size: 1rem !important;
+ }
+}
+

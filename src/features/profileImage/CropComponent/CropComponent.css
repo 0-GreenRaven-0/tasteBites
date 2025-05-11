@@ -1,0 +1,51 @@
+:root{
+    --crop-btn-bg: orange;
+    --crop-btn-txt: yellow;
+}
+
+.dark-mode{
+    --crop-btn-bg: #4f9aff;
+    --crop-btn-txt: white;
+}
+
+.image-cropper-panel{
+  display: flex;
+  
+}
+
+.cropped-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.for-profile-img{
+    flex-direction: row !important;
+}
+
+.image-cropper-panel-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    gap: 10px;
+}
+
+.btn{
+    padding: 5px;
+    border: none;
+    background-color: var(--crop-btn-bg);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--crop-btn-txt);
+    font-size: 1rem;
+    font-weight: 500
+}
+
+@media (max-width: 480px){
+    .cropped-img{
+    width: 120px;
+    height: 120px;
+}
+
+}

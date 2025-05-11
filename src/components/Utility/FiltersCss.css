@@ -1,0 +1,97 @@
+:root{
+    --bg-filter-color: orange;
+    --bg-filter-color-hover: yellow;
+    --text-filter-color: black;
+    --text-filter-color-hover: black;
+    --placeholder: black;
+    --space-indicator-svg: black;
+    --border-outline-color: black;
+}
+
+.dark-mode{
+    --bg-filter-color: #4f9aff;
+    --bg-filter-color-hover: white;
+    --text-filter-color: white;
+    --text-filter-color-hover: black;
+    --placeholder: black;
+    --space-indicator-svg: white;
+    --border-outline-color: white;
+}
+.css-b62m3t-container{
+  z-index: 1 !important;
+}
+
+/* Filter closed */
+.css-1owx1nq-control{
+  background-color: var(--bg-filter-color) !important;
+  border-color: var(--bg-filter-color) !important;
+  color: var(--text-filter-color) !important;
+}
+
+/* Filter open */
+.css-1kp9c73-control{
+  background-color: var(--bg-filter-color) !important;
+  border-color: var(--bg-filter-color) !important;
+  color: var(--text-filter-color) !important;
+  border-color: var(--border-outline-color) !important;
+  box-shadow: 0 0 0 1px  var(--border-outline-color) !important;
+}
+
+/* options background */
+.css-y1rukb-menu{
+    background-color: var(--bg-filter-color) !important;
+    border-color: var(--bg-filter-color) !important;
+    color: var(--text-filter-color) !important;
+}
+
+/* option */
+.css-zr2zht-option{
+    background-color: var(--bg-filter-color) !important;
+    border-color: var(--bg-filter-color) !important;
+    color: var(--text-filter-color) !important;
+}
+
+/* Option hover */
+.css-1nh30ct-option{
+    background-color: var(--bg-filter-color-hover) !important;
+    border-color: var(--bg-filter-color) !important;
+    color: var(--text-filter-color-hover) !important;
+    cursor: pointer !important;
+}
+
+/* The arrow icon */
+.css-tj5bde-Svg{
+    fill: var(--space-indicator-svg) !important; 
+}
+
+/* the space indicator thingy */
+.css-1u9des2-indicatorSeparator{
+    background-color: var(--space-indicator-svg) !important;
+}
+
+/* The placeholder */
+.css-yl2wa5-placeholder {
+ color: var(--text-filter-color) !important;
+}
+
+.css-1p3m7a8-multiValue .css-tj5bde-Svg{
+  fill: black !important;
+}
+
+
+@media (max-width: 480px){
+    .css-1owx1nq-control{
+       width: 7.5rem;
+       z-index: 1 !important;
+      }
+      
+      /* Filter open */
+      .css-1kp9c73-control{
+        width: 7.5rem;
+        z-index: 1 !important;
+      }
+
+      .css-zr2zht-option{
+        z-index: 1 !important;
+    }
+}

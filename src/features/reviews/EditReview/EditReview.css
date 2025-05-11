@@ -1,0 +1,37 @@
+:root{
+    --edit-review-bg: white;  
+    --review-txt: black;
+    --review-btn-bg: orange;
+    --review-btn-txt: yellow;
+  }
+    
+   .dark-mode{
+     --edit-review-bg: rgb(172, 172, 172);
+     --review-txt: white;
+     --review-btn-bg: #4f9aff;
+     --review-btn-txt: white;
+  }
+
+.edit-review-btn-container{
+    display: flex;
+}
+
+.review-input{
+    background-color: var(--edit-review-bg);
+    color: var(--review-txt);
+    width: 100%;
+    height: 70px;
+    resize: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px){
+    .review-add-button{
+        font-size: 0.6rem;
+    }
+
+    .review-form textarea{
+       font-size: 0.7rem;
+    }
+}

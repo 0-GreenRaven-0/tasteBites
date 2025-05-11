@@ -1,0 +1,9 @@
+.theme-icon{
+    font-size: 2rem;
+}
+
+@media (max-width: 480px){
+    .theme-icon{
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,26 @@
+.recipe-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    height: 100%;
+}
+
+
+@media (max-width: 480px) {
+.search-tools {
+  transform: scale(60%);
+  position: relative;
+  z-index: 1000;
+}
+    .recipe-list{
+      padding: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: left;
+
+    }
+
+}

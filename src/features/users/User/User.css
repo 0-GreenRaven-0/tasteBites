@@ -1,0 +1,83 @@
+:root{
+    --view-profile: orange;
+    --view-profile-hover: red;
+    --user-box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode{
+    --view-profile: #4f9aff;
+    --view-profile-hover: lime;
+    --user-box-shadow: rgba(190, 190, 190, 0.3);
+}
+
+.user-info-card{
+    box-shadow: 1px 5px 9px 6px var(--user-box-shadow);
+    display: flex;
+    padding: 5px;
+    cursor: default;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.user-info-card-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.profile-image{
+    border-radius: 50%;
+}
+
+.user-info-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.view-profile-btn{
+    align-self: center;
+    border: none;
+    color: var(--view-profile);
+    font-weight: 500;
+    font-size: 1.2rem;
+    background: none;
+    cursor: pointer;
+}
+
+.view-profile-btn:hover{
+    color: var(--view-profile-hover)
+}
+
+.user-description{
+    width: 70%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 480px){
+  .user-username{
+    font-size: 1rem;
+  }
+
+  .profile-image{
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-description{
+    width: 70%;
+    word-wrap: break-word;
+    font-size: 0.7rem;
+  }
+
+    .user-info-card{
+        height: 120px;
+    }
+
+    .view-profile-btn{
+        font-size: 0.8rem;
+    }
+}

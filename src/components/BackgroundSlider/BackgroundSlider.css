@@ -1,0 +1,13 @@
+.background-slider-header .image-gallery-slide img {
+  max-width: 100% !important;
+  max-height: 50vh !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 480px){
+  .background-slider-header .image-gallery-slide img {
+    max-width: 100% !important;
+    max-height: 35vh !important;
+    object-fit: cover !important;
+  }
+}

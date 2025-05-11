@@ -1,0 +1,32 @@
+:root{
+     --seach-bg-color: orange;
+     --seach-txt-color: black
+  }
+  
+  .dark-mode{
+    --seach-bg-color: #4f9aff;
+    --seach-txt-color: white
+  }
+  
+/*   #4f9aff */
+
+.searchBar{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    height: 38px;
+    font-size: 1.2rem;
+    background-color:  var(--seach-bg-color);
+    color: var(--seach-txt-color);
+}
+
+.searchBar::placeholder{
+    color: var(--seach-txt-color)
+}
+
+@media (max-width: 480px) {
+  .searchBar{
+   width: 10rem;
+   z-index: 1 !important;
+  }
+}

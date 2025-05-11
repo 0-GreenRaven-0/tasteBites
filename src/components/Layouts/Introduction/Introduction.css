@@ -1,0 +1,15 @@
+.introduction{
+    padding: 10px;
+    display: flex;
+}
+
+@media (max-width: 480px){
+    .img{
+       width: 8rem;
+       height: 8rem;
+    }
+
+    .intro-paragraph{
+        font-size: 0.6rem;
+    }
+}

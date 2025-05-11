@@ -1,0 +1,108 @@
+:root{
+    --border-color: darkgoldenrod;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --view-recipe: orange;
+    --read-btn: yellow
+  }
+  
+  .dark-mode{
+    --border-color: darkcyan;
+    --box-shadow-color: rgba(255, 255, 255, 0.445);
+    --view-recipe: #4f9aff;
+    --read-btn: white
+  }
+  
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    box-shadow: 2px 4px 8px 5px var(--box-shadow-color);
+    padding: 10px;
+}
+
+.recipe-image{
+    border-radius: 100%;
+    border: 3px solid var(--border-color);
+    margin-bottom: 10px;
+}
+
+.view-recipe{
+    background-color: var(--view-recipe);
+    color: var(--read-btn);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.recipe-tag{
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.star-ratings{
+  display: flex !important;
+  justify-content: center;
+  background-color: var(--view-recipe);
+  border-radius: 10px;
+  padding: 0 5px 0 5px;
+}
+
+.widget-svg{
+  width: 25px !important;
+  height: 25px !important;
+}
+
+
+@media (max-width: 480px) {
+  .recipe{
+    min-width: 160px;
+    max-width: 160px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-image{
+   width: 6rem;
+   height: 6rem;
+}
+
+.recipe-card-name{
+  font-size: 0.8rem;
+}
+
+.recipe-owner{
+  font-size: 0.6rem;
+}
+
+.recipe-rating {
+  margin: -10px 0 5px 0;
+  height: 15px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .recipe-info{
+  font-size: 0.7rem;
+ }
+
+ .recipe-tag{
+  font-size: 0.5rem;
+ }
+
+ .view-recipe{
+  margin-top: -10px;
+  font-size: 0.6rem;
+ }
+
+ .recipe-rating{
+  transform: scale(55%);
+ }
+
+}

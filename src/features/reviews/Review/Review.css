@@ -1,0 +1,65 @@
+:root{
+  --review-bg: white;  
+  --review-txt: black;
+  --review-btn-bg: orange;
+  --review-btn-txt: yellow;
+}
+  
+ .dark-mode{
+   --review-bg: black;
+   --review-txt: white;
+   --review-btn-bg: #4f9aff;
+   --review-btn-txt: white;
+}
+
+.review{
+    background-color: var(--review-bg);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: default;
+}
+
+.edit-review-btn{
+  border: none;
+  font-size: 1rem;
+  background-color: var(--review-btn-bg);
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: var(--review-btn-txt);
+  cursor: pointer;
+}
+
+@media (max-width: 480px){
+
+  .review{
+    font-size: 0.8rem;
+  }
+    .review-add-button{
+        font-size: 0.6rem;
+    }
+
+    .review-form textarea{
+       font-size: 0.7rem;
+    }
+
+    .edit-review-btn{
+     font-size: 0.7rem;
+  }
+
+  .user-rating{
+    width: 100px !important;
+  }
+
+  .review .star-ratings{
+    width: 50%;  
+    background: none;
+    padding: 5px 0 5px 0;
+  }
+
+   .review .widget-svg{
+      width: 20px !important;
+      height: 20px !important;
+    }
+}
