@@ -23,10 +23,14 @@
     padding: 10px;
 }
 
-.recipe-image{
-    border-radius: 100%;
-    border: 3px solid var(--border-color);
-    margin-bottom: 10px;
+.recipe-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid var(--border-color);
+  margin-bottom: 10px;
+  background-color: #f0f0f0; /* light gray placeholder */
 }
 
 .view-recipe{

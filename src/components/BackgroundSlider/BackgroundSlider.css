@@ -1,14 +1,25 @@
+.background-slider-header {
+  position: relative;
+  height: 50vh; /* Ensures space is reserved */
+  overflow: hidden;
+}
+
 .background-slider-header .image-gallery-slide img {
   max-width: 100% !important;
   max-height: 50vh !important;
   object-fit: cover !important;
-  transition: opacity 0.5s ease-in-out; /* Adds fade-in effect */
 }
 
 @media (max-width: 480px){
+
+  .background-slider-header {
+    height: 35vh;
+  }
+
   .background-slider-header .image-gallery-slide img {
     max-width: 100% !important;
     max-height: 35vh !important;
     object-fit: cover !important;
   }
+  
 }
