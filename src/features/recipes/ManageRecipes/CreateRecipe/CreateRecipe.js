@@ -101,20 +101,10 @@ const CreateRecipe = () => {
 
     useEffect(() => {
         if (isCreateSuccess & isUpImageSuccess) {
-            setTitle("Success! :D")
-            setMessage("Your recipe was created! the images will be uploaded in a few moments")
-            setShow(true)
-            setCallBackFunction(() => () => {
-                navigate('/myRecipes');
-              });
+           navigate('/myRecipes');
               
         }else if(isCreateSuccess){
-            setTitle("Success! :D")
-            setMessage("Your recipe was created!")
-            setShow(true)
-            setCallBackFunction(() => () => {
-                navigate('/myRecipes');
-              });
+            navigate('/myRecipes');
               
         }else if(isCreateError){
             setTitle("Something went wrong...")
