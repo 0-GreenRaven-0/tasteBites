@@ -3,7 +3,7 @@ import { setCredentials } from "../../features/auth/authSlice";
 
 // the basic query for accessing our backend server
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://tasteBites-api.onrender.com',
+    baseUrl: 'https://tastebites-api.onrender.com',
     credentials: 'include',
     prepareHeaders: (headers, {getState}) => {
         const token = getState().auth.token
