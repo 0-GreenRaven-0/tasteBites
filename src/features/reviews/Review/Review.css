@@ -12,6 +12,11 @@
    --review-btn-txt: white;
 }
 
+.user-rating{
+ text-align: left;
+ background: none;
+}
+
 .review{
     background-color: var(--review-bg);
     border-radius: 10px;
