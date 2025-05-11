@@ -2,6 +2,7 @@
   max-width: 100% !important;
   max-height: 50vh !important;
   object-fit: cover !important;
+  transition: opacity 0.5s ease-in-out; /* Adds fade-in effect */
 }
 
 @media (max-width: 480px){
