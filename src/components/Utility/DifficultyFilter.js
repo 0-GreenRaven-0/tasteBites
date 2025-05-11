@@ -2,6 +2,7 @@ import React from 'react'
 import Select from 'react-select'
 
 const options = [
+  { value: ' ', label: 'Difficulty' },
   { value: 'easy', label: 'Easy' },
   { value: 'medium', label: 'Medium' },
   { value: 'hard', label: 'Hard' },

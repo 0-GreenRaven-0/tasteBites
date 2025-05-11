@@ -3,6 +3,7 @@ import './FiltersCss.css'
 
 const CuisineFilter = ({ cuisine, setCuisine }) => {
   const options = [
+    { value: ' ', label: 'Cuisine' },
     { value: 'italian', label: 'Italian' },
     { value: 'french', label: 'French' },
     { value: 'mexican', label: 'Mexican' },

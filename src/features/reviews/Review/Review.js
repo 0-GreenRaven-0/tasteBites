@@ -9,7 +9,7 @@ import './Review.css'
 
 const Review = ({reviewId, recipeId}) => {
 
-  const {username} = useAuth()
+  const {username, id} = useAuth()
 
   const [editMode, setEditMode] = useState(false)
   const userData = useSelector(selectAllUsers)

@@ -48,8 +48,7 @@ const ReviewList = ({recipeId}) => {
         }else{
         content = (
            <div>
-            <h2>You are not logged in!</h2>
-            <p>Create your account or log in to your exisitig one to add reviews on other people's recipes</p>
+            <h2>No reviews were left on this recipe yet</h2>
            </div>
         )
     }
