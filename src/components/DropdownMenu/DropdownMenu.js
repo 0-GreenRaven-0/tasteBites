@@ -35,11 +35,11 @@ const DropdownMenu = ({userId}) => {
     <div className='flex flex-col'>
       <MessageBox show={show} setShow={setShow} title={"Logout"} message={"are you sure you want to log out?"} callBackFunction={handleLogout} buttonsType={'yes-no'}/>
       <ul className='flex flex-col gap-4 dropDownProfile'>
-      {userId ? (<li onClick={() => navigate(`/users/${userId}`)}>My Profile</li>) : <li  onClick={() => navigate('/signUp')}>Sign Up</li>}
-        <li onClick={() => navigate('/myRecipes')}>My Recipes</li>
-       {userId &&  <li onClick={() => navigate('/myRecipes/collection')}>Collections</li>}
-        <li onClick={() => navigate('/users')}>Explore People</li>
-        {userId && (<li onClick={() => {
+      {userId ? (<li className='dropdown-link' onClick={() => navigate(`/users/${userId}`)}>My Profile</li>) : <li className='dropdown-link'  onClick={() => navigate('/signUp')}>Sign Up</li>}
+        <li className='dropdown-link' onClick={() => navigate('/myRecipes')}>My Recipes</li>
+       {userId &&  <li className='dropdown-link'  onClick={() => navigate('/myRecipes/collection')}>Collections</li>}
+        <li className='dropdown-link' onClick={() => navigate('/users')}>Explore People</li>
+        {userId && (<li className='dropdown-link' onClick={() => {
           setShow(true)
         }}>Log out</li>)}
       </ul>

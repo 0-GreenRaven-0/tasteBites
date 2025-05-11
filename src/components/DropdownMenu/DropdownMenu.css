@@ -41,7 +41,7 @@ li{
 }
 
 @media (max-width: 480px){
-    .dropDownProfile{
+    .dropdown-link{
         font-size: 2.5rem;
     }
 }
