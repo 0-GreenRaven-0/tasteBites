@@ -12,10 +12,10 @@
    --review-btn-txt: white;
 }
 
-.user-rating{
- text-align: left;
- background: none;
-}
+  .review .star-ratings{
+    text-align: left;
+    background: none;
+  }
 
 .review{
     background-color: var(--review-bg);
